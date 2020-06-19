@@ -1,0 +1,17 @@
+//variable
+$website-width: 100vw;
+$main-color: rgb(157, 157, 243);
+$light-color: white;
+$medium-color: #ccc;
+$dark-color: grey;
+//compiling sass it iwll be in css folder
+$bg-image: url("../img/showcase.jpg");
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
